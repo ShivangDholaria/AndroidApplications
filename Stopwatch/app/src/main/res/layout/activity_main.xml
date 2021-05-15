@@ -45,8 +45,9 @@
         android:layout_weight="1"
         android:layout_width="0dp"
         app:srcCompat="@android:drawable/alert_light_frame"
-        android:background="#aa42f5"
-        android:onClick="stop_timer"/>
+        android:background="#abdd45"
+        android:onClick="stop_timer"
+        />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

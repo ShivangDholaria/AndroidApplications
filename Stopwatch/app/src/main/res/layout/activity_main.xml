@@ -37,7 +37,6 @@
             android:layout_height="1dp"
             android:layout_weight="0.25" >
         </Space>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
         android:layout_height="wrap_content"
@@ -48,7 +47,5 @@
         android:background="#abdd45"
         android:onClick="stop_timer"
         />
-
     </androidx.appcompat.widget.LinearLayoutCompat>
-
 </androidx.appcompat.widget.LinearLayoutCompat>

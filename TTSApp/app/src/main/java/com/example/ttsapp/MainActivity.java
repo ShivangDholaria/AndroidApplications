@@ -8,13 +8,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextToSpeech tts;
-    private EditText editText;
+    private TextView editText;
     private Button say_button;
 
     @Override

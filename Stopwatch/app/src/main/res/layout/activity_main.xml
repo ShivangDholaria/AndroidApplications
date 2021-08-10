@@ -9,6 +9,13 @@
     android:orientation="vertical">
 
     <Chronometer
+        android:id="@+id/Chrono"
+        android:textSize="40dp"
+
+         android:layout_height="100dp"
+        android:layout_width="250dp"/>
+
+    <Chronometer
         android:layout_marginTop="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

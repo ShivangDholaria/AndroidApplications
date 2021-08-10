@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cities>
+    <city>
+        <City_name>Mumbai</City_name>
+        <Latitude>19.0760N</Latitude>
+        <Longitude>72.8777E</Longitude>
+        <Temperature>30</Temperature>
+        <Humidity>74%</Humidity>
+    </city>
+
+    <city>
+        <City_name>Arendal</City_name>
+        <Latitude>58.4618N/</Latitude>
+        <Longitude>8.7724E</Longitude>
+        <Temperature>20</Temperature>
+        <Humidity>65%</Humidity>
+    </city>
+</cities>

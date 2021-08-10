@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_phone_number"
+        android:inputType="textPersonName"
+        android:gravity="bottom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/num9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+            android:text="@string/_9" />
+
+        <Button
+            android:id="@+id/num8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/num7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+
+            android:text="@string/_7" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/num6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/num5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/num4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+
+            android:text="@string/_4" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/num3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/num2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/num1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+
+            android:text="1" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hash"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+
+            android:text="#" />
+
+
+        <Button
+            android:id="@+id/num0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+            android:text="0" />
+
+
+        <Button
+            android:id="@+id/ast"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="inpNum"
+            android:text="*" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/callbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="@string/call" />
+
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="@string/save" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/clearbtn"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="@string/del" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

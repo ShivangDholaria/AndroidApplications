@@ -1,14 +1,14 @@
 package com.example.ttsapp;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void speak(){
         String text = editText.getText().toString();
-        tts.setPitch(0.8f);
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }
 
@@ -71,3 +70,4 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 }
+        //tts.setPitch(0.8f);

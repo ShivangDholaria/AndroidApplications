@@ -1,38 +1,33 @@
 package com.example.parse;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.text.style.TabStopSpan;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-
 public class MainActivity extends AppCompatActivity {
-
     TextView display;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        display = findViewById(R.id.out);
+        display = (TextView)findViewById(R.id.display);
     }
 
-    public void parseXML(View V) {
+
+    public void parsexml(View V)
+    {
         try {
             InputStream is = getAssets().open("city.xml");
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
@@ -42,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
             stringBuilder.append("XML DATA");
             stringBuilder.append("\n---------");
             NodeList nodeList = document.getElementsByTagName("place");
-            for (int i = 0; i < nodeList.getLength(); i++) {
+            for (int i = 0; i < nodeList.getLength(); i++)
+            {
                 Node node = nodeList.item(i);
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
                     Element element = (Element) node;
@@ -55,18 +51,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             display.setText(stringBuilder.toString());
-        } catch (Exception e) {
+        }catch (Exception e){
             e.printStackTrace();
-            Toast.makeText(MainActivity.this, "Error Parsing XML", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this,"Error Parsing XML",Toast.LENGTH_LONG).show();
         }
     }
-
-    private String getValue(String tag, Element element) {
-        return element.getElementsByTagName(tag).item(0).getChildNodes().item(0).getNodeValue();
-    }
-
-
-    public void parseJS(View V) {
+    public void parsejson(View V){
         String json;
         StringBuilder stringBuilder = new StringBuilder();
         try {
@@ -89,9 +79,14 @@ public class MainActivity extends AppCompatActivity {
             }
             display.setText(stringBuilder.toString());
             is.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-            Toast.makeText(MainActivity.this, "Error in reading", Toast.LENGTH_LONG).show();
         }
+        catch (Exception e){
+            e.printStackTrace();
+            Toast.makeText(MainActivity.this,"Error in reading",Toast.LENGTH_LONG).show();
+        }
+    }
+    private String getValue(String tag, Element element)
+    {
+        return element.getElementsByTagName(tag).item(0).getChildNodes().item(0).getNodeValue();
     }
 }

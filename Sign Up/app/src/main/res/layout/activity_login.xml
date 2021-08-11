@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="210dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="576dp"
+        android:text="Login Activity"
+        android:textSize="28dp" />
     <EditText
-        android:id="@+id/loname"
-        android:layout_width="285dp"
-        android:layout_height="50dp"
+        android:id="@+id/emailEditText"
+        android:layout_width="222dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="424dp"
         android:ems="10"
-        android:hint="@string/username"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088"
-        android:autofillHints="" />
-
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:textSize="28dp" />
     <EditText
-        android:id="@+id/lopass"
-        android:layout_width="285dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239"
-        android:autofillHints="" />
-
-    <Button
-        android:id="@+id/lobut"
+        android:id="@+id/passwordEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="299dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="28dp" />
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="189dp"
+        android:text="login"
+        android:textSize="26dp" />
+</RelativeLayout>
